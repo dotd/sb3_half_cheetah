@@ -1,1 +1,1 @@
-# sb3_half_cheetah
+# Stable Baselines3 - Half Cheetah working
