@@ -1,11 +1,12 @@
 import gym
+from definitions import ROOT_DIR
 
 from stable_baselines3 import SAC
 
 env = gym.make("HalfCheetah-v2")
 
-model = SAC("MlpPolicy", env, verbose=1)
-model.learn(total_timesteps=1000, log_interval=4)
+model = SAC("MlpPolicy", env, verbose=1, tensorboard_log=f"{ROOT_DIR}/tensorboard/half_cheetah_v2/")
+model.learn(total_timesteps=100000, log_interval=4)
 
 # model.save("sac_pendulum")
 
