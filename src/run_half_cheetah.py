@@ -1,9 +1,4 @@
-import os
-
-os.environ['LD_LIBRARY_PATH'] = "/home/did1tv/.mujoco/mujoco210/bin:/usr/lib/nvidia"  # or whatever path you want
-
 import gym
-import numpy as np
 
 from stable_baselines3 import SAC
 

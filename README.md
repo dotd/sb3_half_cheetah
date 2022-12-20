@@ -32,7 +32,11 @@ sudo apt-get install patchelf
 
 ```
 
-
+Adding on Linux to `.bashrc`:
+```
+export LD_LIBRARY_PATH=/home/did1tv/.mujoco/mujoco210/bin:/usr/lib/nvidia
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
+```
 
 ### How to run from command line (from main project folder):
 `venv/bin/python -m src.run_half_cheetah`
