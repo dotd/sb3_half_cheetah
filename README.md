@@ -25,7 +25,12 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/did1tv/.mujoco/mujoco210/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
 ```
 
+`apt install`s needed:
+```
+sudo apt install libglew-dev
+sudo apt-get install patchelf
 
+```
 
 
 
